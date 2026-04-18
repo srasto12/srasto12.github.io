@@ -1,10 +1,388 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sahil Rastogi, a software engineer focused on full-stack applications, AI workflows, and backend systems.">
+  <title>Sahil Rastogi | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]</h1>
-  <p>This is my portfolio website.</p>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Sahil Rastogi home">
+        <span class="brand-mark">SR</span>
+        <span class="brand-text">Sahil Rastogi</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#hackathons">Hackathons</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Software Engineer • Full-Stack Builder • AI Workflow Enthusiast</p>
+          <h1>
+            Building reliable software
+            <span>that feels sharp, useful, and human.</span>
+          </h1>
+          <p class="hero-summary">
+            I'm Sahil Rastogi, an Arizona State University graduate student and former Deloitte analyst focused on
+            full-stack apps, backend systems, and AI-assisted workflows. I enjoy turning complex product ideas into
+            thoughtful experiences backed by solid engineering.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="assets/Sahil-Rastogi-Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <ul class="hero-links" aria-label="Social links">
+            <li><a href="https://github.com/srasto12" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sahil-rastogi/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="https://leetcode.com/u/sahilrastogi1999/" target="_blank" rel="noreferrer">LeetCode</a></li>
+            <li><a href="https://devpost.com/srasto12" target="_blank" rel="noreferrer">Devpost</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="portrait-frame">
+            <div class="portrait-glow"></div>
+            <img src="assets/sahil-rastogi-photo.png" alt="Portrait of Sahil Rastogi">
+          </div>
+
+          <div class="hero-metrics">
+            <article class="metric-card">
+              <span class="metric-value">2+ yrs</span>
+              <span class="metric-label">Professional experience in delivery, automation, and platform support</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-value">4 builds</span>
+              <span class="metric-label">Featured projects across AI, healthcare, workflow tools, and automation</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-value">4 hacks</span>
+              <span class="metric-label">Hackathon products spanning fintech, civic tech, healthcare, and optimization</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">About</p>
+          <h2>Engineering with equal attention to systems and user experience.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="content-card" data-reveal>
+            <p>
+              My background blends production support discipline, backend engineering, and product-minded frontend
+              work. At Deloitte, I built automation and observability workflows that reduced manual effort and improved
+              reliability. In recent projects, I've focused on AI-assisted platforms, full-stack web apps, and robust
+              APIs that keep users in control.
+            </p>
+            <p>
+              I enjoy building software where clean architecture meets practical impact, especially in products that
+              simplify workflows, surface better decisions, or remove repetitive work for users.
+            </p>
+          </article>
+
+          <article class="content-card highlights-card" data-reveal>
+            <div>
+              <span class="label">Based in</span>
+              <strong>Arizona, United States</strong>
+            </div>
+            <div>
+              <span class="label">Currently pursuing</span>
+              <strong>M.S. in Computer Software Engineering</strong>
+            </div>
+            <div>
+              <span class="label">Interested in</span>
+              <strong>Software engineering, backend systems, AI products, and full-stack development</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="education-grid">
+          <article class="timeline-card" data-reveal>
+            <p class="timeline-period">Aug 2024 - May 2026</p>
+            <h3>Arizona State University</h3>
+            <p>Master of Science in Computer Software Engineering</p>
+            <p>GPA: 3.93</p>
+            <span>Advanced Data Structures and Algorithms, Software Requirements and Specification, Web-based Applications</span>
+          </article>
+
+          <article class="timeline-card" data-reveal>
+            <p class="timeline-period">Aug 2018 - Jun 2022</p>
+            <h3>Jaypee Institute of Information Technology</h3>
+            <p>Bachelor of Technology in Information Technology</p>
+            <p>GPA: 3.8</p>
+            <span>Software Development, DSA, DBMS, Cloud-Based Enterprise Systems, Operating Systems</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Experience</p>
+          <h2>Built with production constraints, cross-functional teams, and real operational stakes.</h2>
+        </div>
+
+        <div class="experience-stack">
+          <article class="experience-card" data-reveal>
+            <div class="experience-topline">
+              <div>
+                <h3>Deloitte</h3>
+                <p>Solution Delivery Analyst</p>
+              </div>
+              <span>Jun 2022 - Jul 2024</span>
+            </div>
+            <ul>
+              <li>Built automation and backend workflows in Python, Bash, and Linux/UNIX, reducing manual effort by 25%+.</li>
+              <li>Engineered and tuned 20+ Google Chronicle detection rules, improving alert quality and detection accuracy by 30%.</li>
+              <li>Owned production issue resolution in agile environments while partnering with SOC and engineering teams on troubleshooting and observability.</li>
+              <li>Developed reusable Python, SQL, and Bash tooling to support operational workflows and faster incident response.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card" data-reveal>
+            <div class="experience-topline">
+              <div>
+                <h3>Deloitte</h3>
+                <p>Technology Intern</p>
+              </div>
+              <span>Feb 2022 - May 2022</span>
+            </div>
+            <ul>
+              <li>Built and shipped Python and Bash automation scripts for security operations with Git-based versioning and documentation.</li>
+              <li>Supported incident triage tooling and contributed to XSOAR automation workflows.</li>
+              <li>Applied AWS and Azure fundamentals while collaborating on security-focused team deliverables.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="hackathons" class="section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Hackathons</p>
+          <h2>Fast, ambitious builds where product thinking and execution had to happen together.</h2>
+          <p class="section-copy">
+            These projects capture the kind of work I enjoy most during hackathons: shipping quickly, integrating
+            modern AI tooling, and turning rough ideas into something people can interact with. More work can be shared
+            through <a class="inline-link" href="https://devpost.com/srasto12" target="_blank" rel="noreferrer">my Devpost profile</a>.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Optimization Hackathon</p>
+              <h3>Elektraz</h3>
+            </div>
+            <p>
+              Built a toolkit for optimizing solar-powered EV charging station placement across Arizona using public
+              datasets, demand prediction, PV sizing, and facility-location optimization.
+            </p>
+            <ul class="project-points">
+              <li>Combined ML models, SHAP explainability, PV sizing, and MILP optimization in one pipeline.</li>
+              <li>Delivered a Streamlit dashboard for configuration, maps, optimization runs, and results review.</li>
+            </ul>
+            <p class="tech-list">Python • Streamlit • Pyomo • XGBoost • LightGBM • CatBoost • Public APIs</p>
+            <div class="project-actions">
+              <a class="button button-tertiary" href="https://github.com/ak-asu/elektraz" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Fintech Hackathon</p>
+              <h3>MoneyNest</h3>
+            </div>
+            <p>
+              Created a financial wellness app with onboarding, budgeting, AI coaching, document analysis, saved plans,
+              and mini-games designed to make money habits more interactive and personalized.
+            </p>
+            <p class="tech-list">Next.js 15 • React 19 • TypeScript • Tailwind CSS • Supabase • Plaid • AI integrations</p>
+            <div class="project-actions">
+              <a class="button button-tertiary" href="https://github.com/ak-asu/ihack" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Civic Tech Hackathon</p>
+              <h3>CommonGround Cards</h3>
+            </div>
+            <p>
+              Built a full-stack civic discussion tool that generates structured issue cards, persists history, and
+              uses AI-powered group insights to highlight shared values and more constructive next steps.
+            </p>
+            <p class="tech-list">Next.js • Prisma • SQLite • React • TinyFish</p>
+            <div class="project-actions">
+              <a class="button button-tertiary" href="https://github.com/srasto12/Governance_and_collaboration_app_Claude_Hackathon_2026" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Healthcare Hackathon</p>
+              <h3>CareCallerAI</h3>
+            </div>
+            <p>
+              Developed a multilingual patient monitoring and clinician operations app with voice-first workflows,
+              structured extraction, persistent memory, scheduling support, and live web enrichment.
+            </p>
+            <p class="tech-list">Next.js 15 • TypeScript • Supabase • Vapi • ElevenLabs • Groq • Gemini • Tavily</p>
+            <div class="project-actions">
+              <a class="button button-tertiary" href="https://github.com/ak-asu/carecallerai" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projects</p>
+          <h2>Longer-form projects shaped by backend depth, reliable APIs, and user-facing product thinking.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">AI + Product Workflow</p>
+              <h3>Aligned Rewards - AI Assisted OKR Goal Builder</h3>
+            </div>
+            <p>
+              Built backend APIs in NestJS and TypeScript for drafts, autosave, key result updates, AI suggestions,
+              and publishing workflows with robust draft and publish state management.
+            </p>
+            <ul class="project-points">
+              <li>Modeled MongoDB entities for draft recovery and workflow transitions.</li>
+              <li>Created end-to-end Cypress coverage for permissions, core flows, and publish integrity.</li>
+            </ul>
+            <p class="tech-list">NestJS • TypeScript • MongoDB • Cypress • Postman</p>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Full-Stack App</p>
+              <h3>Agentic Job Applications Tracker</h3>
+            </div>
+            <p>
+              Developed a full-stack job tracker with reminders, notes, calendar view, search, CSV export, and
+              approval-based AI workflows for grounded follow-up generation.
+            </p>
+            <p class="tech-list">Next.js • TypeScript • Prisma • SQLite • REST APIs</p>
+            <div class="project-actions">
+              <a class="button button-tertiary" href="https://github.com/SahilRastogi10/jobTracker" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Healthcare + AI</p>
+              <h3>MediConnect</h3>
+            </div>
+            <p>
+              Built responsive patient and doctor interfaces with secure APIs, recommendation logic, chatbot support,
+              and Dockerized deployment across cloud-backed services.
+            </p>
+            <p class="tech-list">React • Spring Boot • FastAPI • Supabase • Docker • AWS</p>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-header">
+              <p class="project-tag">Automation</p>
+              <h3>AI Email Reply Automation</h3>
+            </div>
+            <p>
+              Designed an event-driven n8n workflow that processed inbound emails, used LLM-based decision logic,
+              and generated context-aware drafts through staged automation.
+            </p>
+            <p class="tech-list">n8n • OpenAI • Gmail API • HTTP APIs • Structured Outputs</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to ship dependable systems and polished web experiences.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal>
+            <h3>Languages</h3>
+            <p>Java, Python, SQL, TypeScript, JavaScript, Bash, C++</p>
+          </article>
+          <article class="skill-card" data-reveal>
+            <h3>Frontend & Web</h3>
+            <p>React, Next.js, HTML5, CSS3, REST APIs, responsive UI development</p>
+          </article>
+          <article class="skill-card" data-reveal>
+            <h3>Backend</h3>
+            <p>NestJS, Spring Boot, FastAPI, Prisma, RBAC, JWT, OAuth, microservices</p>
+          </article>
+          <article class="skill-card" data-reveal>
+            <h3>Databases</h3>
+            <p>MySQL, PostgreSQL, MongoDB, DynamoDB, schema design, vector search basics</p>
+          </article>
+          <article class="skill-card" data-reveal>
+            <h3>Cloud & DevOps</h3>
+            <p>AWS, Azure, Docker, Kubernetes, CI/CD, Linux/UNIX</p>
+          </article>
+          <article class="skill-card" data-reveal>
+            <h3>AI & Integration</h3>
+            <p>RAG, LangGraph, structured outputs, webhooks, ETL basics, API integrations, AWS Bedrock, Llama</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something useful together.</h2>
+        </div>
+
+        <div class="contact-card" data-reveal>
+          <p>
+            I'm open to software engineering opportunities, collaborative projects, and conversations around backend
+            systems, AI-assisted applications, and full-stack product development.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:sahilrastogi106@gmail.com">sahilrastogi106@gmail.com</a>
+            <a href="tel:+16026147803">+1 (602) 614-7803</a>
+            <a href="https://github.com/srasto12" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/sahil-rastogi/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://leetcode.com/u/sahilrastogi1999/" target="_blank" rel="noreferrer">LeetCode</a>
+            <a href="https://devpost.com/srasto12" target="_blank" rel="noreferrer">Devpost</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> Sahil Rastogi. Designed and built for GitHub deployment.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
