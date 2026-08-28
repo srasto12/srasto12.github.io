@@ -1,19 +1,19 @@
 # Sahil Rastogi Portfolio
 
-A lightweight personal portfolio site built as a static one-page website for easy GitHub hosting.
+A personal portfolio site built as a single static page with no framework or build step.
 
 ## Files
 
 - `index.html` contains the page structure and content.
 - `styles.css` contains the visual design and responsive layout.
-- `script.js` contains the mobile navigation and scroll reveal interactions.
-- `assets/` contains the profile image and resume download.
+- `script.js` contains the mobile navigation, sticky header, scroll reveal, and contact-form mailto handler.
+- `assets/` contains the profile image, hackathon photos, and resume PDF.
 
 ## Run locally
 
 Because this is a static site, you can open `index.html` directly in a browser.
 
-If you want a simple local server from PowerShell:
+For a local server from PowerShell:
 
 ```powershell
 python -m http.server 8000
@@ -21,16 +21,12 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Deploy to GitHub Pages
+## Resume
 
-1. Create a new GitHub repository.
-2. Push this folder to the repository.
-3. In the repository, open `Settings` > `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select the `main` branch and the `/ (root)` folder.
-6. Save the settings and wait for GitHub Pages to publish.
+The Resume section and hero button link to `assets/Sahil-Rastogi-Resume.pdf`. Replace that file
+with the latest export (keep the same filename) whenever the resume changes.
 
-## Suggested next edits
+## Deploy
 
-- Add direct links for individual project repositories or live demos.
-- Update the hero introduction to match your preferred tone more closely.
+The live site is a static deployment of this repository's root. Any static host that serves
+`index.html` from the repo root works; no build command is required.

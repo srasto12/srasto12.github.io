@@ -198,13 +198,15 @@ img {
 .hero h1,
 .section-heading h2 {
   margin: 0;
-  font-family: "Instrument Serif", serif;
-  letter-spacing: -0.03em;
-  line-height: 0.94;
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
 }
 
 .hero h1 {
-  font-size: clamp(3.8rem, 8vw, 7rem);
+  font-size: clamp(3.4rem, 7vw, 6rem);
+  line-height: 1;
   color: #f8dbc0;
 }
 
@@ -216,7 +218,6 @@ img {
   line-height: 1.45;
 }
 
-.hero-summary,
 .section-copy,
 .content-card p,
 .highlight-card p,
@@ -226,12 +227,6 @@ img {
 .contact-card p {
   color: var(--muted);
   line-height: 1.8;
-}
-
-.hero-summary {
-  max-width: 680px;
-  margin: 24px 0 0;
-  font-size: 1.04rem;
 }
 
 .hero-actions,
@@ -289,8 +284,7 @@ img {
 }
 
 .hero-links,
-.contact-links,
-.skill-list {
+.contact-links {
   margin: 0;
   padding: 0;
 }
@@ -329,7 +323,6 @@ img {
 .profile-card,
 .highlight-card,
 .project-card,
-.skill-card,
 .resume-card,
 .contact-card {
   border: 1px solid var(--line);
@@ -424,7 +417,7 @@ img {
 }
 
 .section-heading h2 {
-  font-size: clamp(2.5rem, 4.5vw, 4.6rem);
+  font-size: clamp(2rem, 3.6vw, 3.4rem);
 }
 
 .section-copy {
@@ -433,8 +426,7 @@ img {
 
 .about-grid,
 .highlights-grid,
-.projects-grid,
-.skills-grid {
+.projects-grid {
   display: grid;
   gap: 18px;
 }
@@ -447,7 +439,6 @@ img {
 .profile-card,
 .highlight-card,
 .project-card,
-.skill-card,
 .resume-card,
 .contact-card {
   padding: 28px;
@@ -477,8 +468,7 @@ img {
 }
 
 .highlight-card h3,
-.project-card h3,
-.skill-card h3 {
+.project-card h3 {
   margin: 0 0 12px;
   font-size: 1.2rem;
   line-height: 1.3;
@@ -526,32 +516,54 @@ img {
   margin-top: 20px;
 }
 
-.skills-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.skill-list {
-  list-style: none;
+.skills-rows {
   display: grid;
-  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
 }
 
-.skill-list li {
-  position: relative;
-  padding-left: 18px;
+.skill-row {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 20px 28px;
+  align-items: start;
+  padding: 22px 28px;
+}
+
+.skill-row + .skill-row {
+  border-top: 1px solid var(--line);
+}
+
+.skill-row h3 {
+  margin: 0;
+  padding-top: 6px;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.skill-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-tags li {
+  padding: 7px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
   color: var(--muted);
-  line-height: 1.6;
-}
-
-.skill-list li::before {
-  content: "";
-  position: absolute;
-  top: 0.7em;
-  left: 0;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .resume-card,
@@ -629,10 +641,11 @@ img {
 .contact-intro h2 {
   max-width: 660px;
   margin: 0;
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(3rem, 6vw, 5.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
 }
 
 .contact-intro h2 span {
@@ -763,6 +776,195 @@ img {
   color: var(--text);
 }
 
+/* Experience timeline */
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+
+.timeline-item {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-panel);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(18px);
+}
+
+.role-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 18px;
+}
+
+.timeline-role {
+  margin: 0;
+  font-size: 1.24rem;
+  line-height: 1.3;
+}
+
+.timeline-dates {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.timeline-company {
+  margin: 6px 0 0;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.timeline-bullets {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.timeline-bullets li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Primary projects */
+.projects-primary {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+
+.project-detail {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.project-detail strong {
+  color: var(--text);
+}
+
+.subsection-title {
+  margin: 0 0 20px;
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+  letter-spacing: -0.02em;
+}
+
+/* Other work */
+.otherwork-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.otherwork-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.otherwork-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.otherwork-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.otherwork-card .tech-list {
+  margin: 0 0 16px;
+  font-size: 0.82rem;
+}
+
+.otherwork-card .button-tertiary {
+  min-height: 40px;
+  margin-top: auto;
+  font-size: 0.92rem;
+}
+
+/* Education */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.edu-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.edu-institution {
+  margin: 0;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.edu-meta {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.edu-card ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.edu-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.education-grid + .highlights-grid {
+  margin-bottom: 18px;
+}
+
+/* Hackathon moments (compact) */
+.moments-section .section-heading h2.moments-title {
+  margin: 0;
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -782,8 +984,12 @@ img {
 
   .highlights-grid,
   .projects-grid,
-  .skills-grid {
+  .otherwork-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
   }
 
   .moments-grid {
@@ -850,12 +1056,31 @@ img {
 
   .highlights-grid,
   .projects-grid,
-  .skills-grid {
+  .otherwork-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-metrics {
     grid-template-columns: 1fr;
+  }
+
+  .role-line {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .timeline-item {
+    padding: 22px;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 22px;
+  }
+
+  .skill-row h3 {
+    padding-top: 0;
   }
 
   .form-row {
@@ -874,7 +1099,6 @@ img {
   .profile-card,
   .highlight-card,
   .project-card,
-  .skill-card,
   .resume-card,
   .contact-card,
   .hero-panel {
