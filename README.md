@@ -6,7 +6,7 @@ A personal portfolio site built as a single static page with no framework or bui
 
 - `index.html` contains the page structure and content.
 - `styles.css` contains the visual design and responsive layout.
-- `script.js` contains the mobile navigation, sticky header, scroll reveal, and contact-form mailto handler.
+- `script.js` contains the mobile navigation, sticky header, scroll-progress bar, project switcher, scroll reveal, and contact-form mailto handler.
 - `assets/` contains the profile image, hackathon photos, and resume PDF.
 
 ## Run locally

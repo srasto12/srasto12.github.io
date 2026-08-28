@@ -22,617 +22,369 @@
   <title>Sahil Rastogi | Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Sahil Rastogi home">
-        <span class="brand-mark">SR</span>
-        <span class="brand-text">Sahil Rastogi</span>
-      </a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-      </button>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sahil Rastogi, home">
+      <span class="brand-mark">SR</span>
+      <span class="brand-text">Sahil Rastogi</span>
+    </a>
 
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
 
-    <main>
-      <section id="home" class="hero section">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Software Engineer &middot; Backend, Full-Stack &amp; AI Engineering</p>
-          <h1>Sahil Rastogi</h1>
-          <p class="hero-headline">
-            I build production backend systems, cloud infrastructure, and AI-enabled applications, with 2+ years
-            shipping customer-facing software.
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#background">Background</a>
+      <a href="#work">Work</a>
+      <a href="#capabilities">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Software Engineer</p>
+          <h1>Sahil<br>Rastogi</h1>
+          <p class="hero-role">Backend<span>/</span>Full-Stack<span>/</span>AI Engineering</p>
+          <p class="hero-line">
+            I build production backend systems, cloud infrastructure, and AI-enabled applications.
+            2+ years shipping customer-facing software from requirements through deployment.
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore Projects</a>
-            <a class="button button-secondary" href="assets/Sahil-Rastogi-Resume.pdf" download>Download Resume PDF</a>
-            <a class="button button-ghost" href="#contact">Get In Touch</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">View Work</a>
+            <a class="btn btn-line" href="assets/Sahil-Rastogi-Resume.pdf" download>Résumé</a>
+            <a class="btn btn-line" href="#contact">Contact</a>
           </div>
 
-          <ul class="hero-links" aria-label="Professional links">
-            <li><a href="mailto:sahilrastogi106@gmail.com">Email</a></li>
+          <ul class="hero-links" aria-label="Profiles">
             <li><a href="https://github.com/Srasto12" target="_blank" rel="noreferrer">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/sahil-rastogi/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:sahilrastogi106@gmail.com">Email</a></li>
             <li><a href="https://leetcode.com/u/sahilrastogi1999/" target="_blank" rel="noreferrer">LeetCode</a></li>
             <li><a href="https://devpost.com/srasto12" target="_blank" rel="noreferrer">Devpost</a></li>
           </ul>
         </div>
 
-        <aside class="hero-panel" data-reveal aria-label="Profile summary">
-          <div class="portrait-frame">
-            <div class="portrait-glow"></div>
+        <aside class="hero-side" aria-label="Snapshot">
+          <div class="portrait">
             <img src="assets/sahil-rastogi-photo.png" alt="Portrait of Sahil Rastogi">
           </div>
 
-          <div class="hero-badge-card">
-            <p class="mini-label">Current Focus</p>
-            <p class="hero-badge-copy">
-              Backend systems and production software, cloud infrastructure on AWS, event-driven services, and
-              AI-enabled applications, with a focus on security, testing, and reliability.
-            </p>
-          </div>
+          <dl class="snapshot">
+            <div>
+              <dt>Now</dt>
+              <dd>Backend AI Engineering Intern<span>DADO Luxury Ventures, Inc.</span></dd>
+            </div>
+            <div>
+              <dt>Before</dt>
+              <dd>Solution Delivery Analyst<span>Deloitte &middot; M.S. CSE, ASU</span></dd>
+            </div>
+          </dl>
 
-          <div class="hero-metrics">
-            <article class="metric-card">
-              <span class="metric-value">2+ Years</span>
-              <span class="metric-label">Building production backend systems in Java, Python, and TypeScript</span>
-            </article>
-            <article class="metric-card">
-              <span class="metric-value">3.93 GPA</span>
-              <span class="metric-label">M.S. Computer Software Engineering, Arizona State University</span>
-            </article>
-            <article class="metric-card metric-card-wide">
-              <span class="metric-value">Now</span>
-              <span class="metric-label">Backend &amp; AI engineering at DADO Luxury Ventures, Inc.</span>
-            </article>
-          </div>
+          <ul class="chips" aria-label="Quick facts">
+            <li>2+ yrs production</li>
+            <li>3.93 GPA</li>
+            <li>2nd &middot; SoDA XII</li>
+            <li>3rd &middot; IISE 2025</li>
+          </ul>
         </aside>
-      </section>
+      </div>
+    </section>
 
-      <section id="about" class="section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">About</p>
-          <h2>From backend automation at Deloitte to production and AI engineering at DADO.</h2>
-        </div>
+    <section id="background" class="section" data-reveal>
+      <div class="section-head">
+        <p class="sec-index">Background</p>
+        <h2>From backend automation at Deloitte to production and AI engineering at DADO.</h2>
+      </div>
 
-        <div class="about-grid">
-          <article class="content-card" data-reveal>
-            <p>
-              I'm a software engineer with a little over two years of professional experience shipping production
-              software. At Deloitte I built backend automation and detection engineering for enterprise clients:
-              Python, Bash, and Linux tooling that cut manual work and improved reliability, plus 20+ Google Chronicle
-              detection rules tuned from real telemetry.
-            </p>
-            <p>
-              After an M.S. in Computer Software Engineering at Arizona State University, I moved into backend and AI
-              engineering at DADO Luxury Ventures, where I own a customer-facing feature end to end, refactor services
-              behind an event-driven notification system, harden authentication and two-factor flows, and keep
-              production healthy with Playwright coverage and Sentry diagnostics.
-            </p>
-            <p>
-              The through-line is backend and systems engineering: designing APIs and data models, thinking about
-              failure modes, and building AI-enabled features that stay grounded and stay in the user's control.
-            </p>
-          </article>
-
-          <article class="profile-card" data-reveal>
-            <div class="profile-item">
-              <span class="label">Currently</span>
-              <strong>Backend AI Engineering Intern, DADO Luxury Ventures, Inc.</strong>
-            </div>
-            <div class="profile-item">
-              <span class="label">Focus</span>
-              <strong>Backend systems, event-driven services, cloud infrastructure, AI-enabled applications</strong>
-            </div>
-            <div class="profile-item">
-              <span class="label">Experience</span>
-              <strong>2+ years across DADO Luxury Ventures and Deloitte</strong>
-            </div>
-            <div class="profile-item">
-              <span class="label">Education</span>
-              <strong>M.S. Computer Software Engineering, Arizona State University</strong>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Experience</p>
-          <h2>Production engineering across product and enterprise teams.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item" data-reveal>
-            <div class="role-line">
-              <h3 class="timeline-role">Backend AI Engineering Intern</h3>
-              <span class="timeline-dates">July 2026 to Present</span>
-            </div>
-            <p class="timeline-company">DADO Luxury Ventures, Inc.</p>
-            <ul class="timeline-bullets">
-              <li>
-                Own end-to-end delivery of a new customer-facing feature across React, TypeScript, PostgreSQL,
-                Supabase, and AWS (EC2, S3, IAM), refactoring backend services behind an event-driven notification
-                system.
-              </li>
-              <li>
-                Standardized Git flow, repository structure, and code review practices across the team.
-              </li>
-              <li>
-                Identified and remediated backend security vulnerabilities across production services ahead of launch,
-                hardening authentication, authorization, and two-factor authentication flows alongside secure coding
-                practices.
-              </li>
-              <li>
-                Established end-to-end test coverage with Playwright and integrated Sentry for centralized exception
-                tracking, performance monitoring, and release diagnostics, improving visibility into production
-                failures.
-              </li>
-            </ul>
-            <p class="tech-list">React &middot; TypeScript &middot; PostgreSQL &middot; Supabase &middot; AWS EC2/S3/IAM &middot; Playwright &middot; Sentry &middot; Event-driven services</p>
-          </article>
-
-          <article class="timeline-item" data-reveal>
-            <div class="role-line">
-              <h3 class="timeline-role">Solution Delivery Analyst</h3>
-              <span class="timeline-dates">June 2022 to July 2024</span>
-            </div>
-            <p class="timeline-company">Deloitte</p>
-            <ul class="timeline-bullets">
-              <li>
-                Delivered backend automation and workflows in Python, Bash, and Linux for enterprise clients inside
-                agile delivery teams, cutting manual effort by 25%+ and improving system reliability while
-                troubleshooting networking and security issues across production environments.
-              </li>
-              <li>
-                Partnered directly with SOC and client engineering stakeholders to gather requirements, translate them
-                into working solutions, and own production issues through resolution.
-              </li>
-              <li>
-                Engineered and tuned 20+ Google Chronicle detection rules from telemetry and log data, improving alert
-                quality and accuracy by 30%.
-              </li>
-              <li>
-                Built reusable Python, SQL, and Bash tooling plus operational playbooks and docs so teams could run and
-                extend workflows independently.
-              </li>
-            </ul>
-            <p class="tech-list">Python &middot; Bash &middot; Linux &middot; SQL &middot; Google Chronicle &middot; Detection Engineering &middot; Agile Delivery</p>
-          </article>
-
-          <article class="timeline-item" data-reveal>
-            <div class="role-line">
-              <h3 class="timeline-role">Technology Intern</h3>
-              <span class="timeline-dates">February 2022 to May 2022</span>
-            </div>
-            <p class="timeline-company">Deloitte</p>
-            <ul class="timeline-bullets">
-              <li>
-                Shipped Python and Bash automation for security operations with Git-based versioning and clear handoff
-                documentation.
-              </li>
-              <li>
-                Built XSOAR automation workflows for incident triage, applying AWS and Azure fundamentals across team
-                deliverables.
-              </li>
-            </ul>
-            <p class="tech-list">Python &middot; Bash &middot; XSOAR &middot; AWS &middot; Azure</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Projects</p>
-          <h2>Engineering projects, from API design to grounded AI workflows.</h2>
-          <p class="section-copy">
-            Each primary project below covers the problem, what I built, the core engineering work, and the stack.
-          </p>
-        </div>
-
-        <div class="projects-primary">
-          <article class="project-card project-featured" data-reveal>
-            <div class="project-header">
-              <p class="project-tag">Backend &middot; Workflow Platform</p>
-              <h3>Aligned Rewards: OKR Workflow Management Platform</h3>
-            </div>
-            <p class="project-detail">
-              <strong>Problem.</strong> OKR creation spanned drafting, editing, and publishing with fragile state and a
-              real risk of duplicate or unauthorized changes.
-            </p>
-            <p class="project-detail">
-              <strong>What I built.</strong> REST APIs in NestJS and TypeScript for draft autosave, key result updates,
-              AI suggestions, and publishing workflows, improving reliability across OKR creation flows.
-            </p>
-            <p class="project-detail">
-              <strong>Engineering.</strong> Modeled MongoDB entities and workflow state for draft management, autosave
-              recovery, and publish transitions; built end-to-end Cypress tests covering core flows, permissions, and
-              publish integrity, reducing duplicate and unauthorized actions.
-            </p>
-            <p class="tech-list">NestJS &middot; TypeScript &middot; MongoDB &middot; Cypress &middot; Postman</p>
-          </article>
-
-          <article class="project-card project-featured" data-reveal>
-            <div class="project-header">
-              <p class="project-tag">Full-Stack &middot; AI Workflow</p>
-              <h3>AI Powered Job Application Platform</h3>
-            </div>
-            <p class="project-detail">
-              <strong>Problem.</strong> A job search scatters application state, recruiter context, and follow-ups
-              across disconnected tools.
-            </p>
-            <p class="project-detail">
-              <strong>What I built.</strong> A Next.js and TypeScript app with an approval-gated AI workflow that uses
-              RAG over saved job links, notes, and recruiter context to generate grounded follow-up content and
-              application Q&amp;A, supporting both OpenAI and local Ollama models.
-            </p>
-            <p class="project-detail">
-              <strong>Engineering.</strong> Responsive React interfaces and Next.js API routes for CRUD across
-              applications, reminders, recruiter details, and job-linked records backed by Prisma; full pipeline with
-              calendar reminders, daily notes, search and filtering, stats views, and CSV export.
-            </p>
-            <p class="tech-list">Next.js &middot; TypeScript &middot; Prisma &middot; SQLite &middot; RAG &middot; OpenAI / Ollama</p>
-            <div class="project-actions">
-              <a class="button button-tertiary" href="https://github.com/SahilRastogi10/jobTracker" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card project-featured" data-reveal>
-            <div class="project-header">
-              <p class="project-tag">Full-Stack &middot; Voice + AI</p>
-              <h3>CareCaller: Patient Monitoring Workflow Platform</h3>
-            </div>
-            <p class="project-detail">
-              <strong>Problem.</strong> Patient monitoring needs reliable follow-up calls with safe escalation and an
-              accurate record that survives corrections.
-            </p>
-            <p class="project-detail">
-              <strong>What I built.</strong> Designed and trained an AI model for a voice pipeline with safety
-              escalation, cached memory, structured extraction, and LLM fallback, plus a multilingual patient-facing
-              interface across the full stack.
-            </p>
-            <p class="project-detail">
-              <strong>Engineering.</strong> Timeline, appointment, and medication workflows that update logs, memory,
-              and automation jobs on every correction; integrated Supabase, Vapi, ElevenLabs, and Groq.
-            </p>
-            <p class="tech-list">Next.js &middot; TypeScript &middot; Supabase &middot; Vapi &middot; ElevenLabs &middot; Groq</p>
-            <div class="project-actions">
-              <a class="button button-tertiary" href="https://github.com/ak-asu/carecallerai" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-        </div>
-
-        <h3 class="subsection-title">Other work</h3>
-        <div class="otherwork-grid">
-          <article class="otherwork-card" data-reveal>
-            <p class="mini-label">3rd Place &middot; IISE Optimization Hackathon 2025</p>
-            <h3>ELEKTRAZ</h3>
-            <p>
-              Toolkit for placing solar-powered EV charging stations across Arizona using public datasets, demand
-              prediction, photovoltaic sizing, and facility-location optimization.
-            </p>
-            <p class="tech-list">Python &middot; Streamlit &middot; Pyomo &middot; XGBoost &middot; LightGBM</p>
-            <a class="button button-tertiary" href="https://github.com/ak-asu/elektraz" target="_blank" rel="noreferrer">GitHub</a>
-          </article>
-
-          <article class="otherwork-card" data-reveal>
-            <p class="mini-label">Fintech Hackathon</p>
-            <h3>MoneyNest</h3>
-            <p>
-              Financial wellness app with onboarding, budgeting, AI coaching, document analysis, saved plans, and
-              mini-games to make money skills more interactive.
-            </p>
-            <p class="tech-list">Next.js &middot; React &middot; TypeScript &middot; Supabase &middot; Plaid</p>
-            <a class="button button-tertiary" href="https://github.com/ak-asu/ihack" target="_blank" rel="noreferrer">GitHub</a>
-          </article>
-
-          <article class="otherwork-card" data-reveal>
-            <p class="mini-label">Civic Tech Hackathon</p>
-            <h3>CommonGround Cards</h3>
-            <p>
-              Civic discussion app that generates structured issue cards, persists history, and provides AI-powered
-              group insights to surface shared values and constructive next steps.
-            </p>
-            <p class="tech-list">Next.js &middot; Prisma &middot; SQLite &middot; React</p>
-            <a class="button button-tertiary" href="https://github.com/srasto12/Governance_and_collaboration_app_Claude_Hackathon_2026" target="_blank" rel="noreferrer">GitHub</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Skills</p>
-          <h2>Organized around the tools and systems I use most often.</h2>
-        </div>
-
-        <div class="skills-rows">
-          <article class="skill-row" data-reveal>
-            <h3>Languages</h3>
-            <ul class="skill-tags">
-              <li>Java</li>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>TypeScript</li>
-              <li>JavaScript</li>
-              <li>Bash</li>
-              <li>C++</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>Web &amp; Frameworks</h3>
-            <ul class="skill-tags">
-              <li>React</li>
-              <li>Next.js</li>
-              <li>NestJS</li>
-              <li>Spring Boot</li>
-              <li>FastAPI</li>
-              <li>REST APIs</li>
-              <li>Prisma</li>
-              <li>HTML5 &amp; CSS3</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>Backend &amp; Systems</h3>
-            <ul class="skill-tags">
-              <li>Microservices</li>
-              <li>Distributed Systems</li>
-              <li>System Design</li>
-              <li>Event-Driven Services</li>
-              <li>API Gateway</li>
-              <li>RBAC, JWT, OAuth</li>
-              <li>Concurrency</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>Databases</h3>
-            <ul class="skill-tags">
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>DynamoDB</li>
-              <li>Vector Databases</li>
-              <li>Schema Design</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>Cloud &amp; DevOps</h3>
-            <ul class="skill-tags">
-              <li>AWS EC2, S3, RDS</li>
-              <li>AWS IAM, Lambda, CloudWatch</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>CI/CD</li>
-              <li>Linux / Unix</li>
-              <li>Infrastructure Automation</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>Testing &amp; Tools</h3>
-            <ul class="skill-tags">
-              <li>Playwright</li>
-              <li>Cypress</li>
-              <li>Postman</li>
-              <li>Git</li>
-              <li>Unit Testing</li>
-              <li>Integration Testing</li>
-            </ul>
-          </article>
-
-          <article class="skill-row" data-reveal>
-            <h3>AI &amp; Data Integration</h3>
-            <ul class="skill-tags">
-              <li>RAG</li>
-              <li>LLM APIs</li>
-              <li>Vector Search</li>
-              <li>Embeddings</li>
-              <li>Llama</li>
-              <li>AWS Bedrock</li>
-              <li>LangGraph</li>
-              <li>API Integrations</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Education &amp; Achievements</p>
-          <h2>Graduate and undergraduate foundations, plus recent competition results.</h2>
-        </div>
-
-        <div class="education-grid">
-          <article class="edu-card content-card" data-reveal>
-            <h3>Master of Science in Computer Software Engineering</h3>
-            <p class="edu-institution">Arizona State University</p>
-            <p class="edu-meta">August 2024 to May 2026 &middot; GPA 3.93</p>
-            <ul>
-              <li>2nd Place, ASU SoDA Spring 2026 Code Challenge XII</li>
-              <li>3rd Place, IISE Optimization Hackathon 2025 (ELEKTRAZ)</li>
-            </ul>
-          </article>
-
-          <article class="edu-card content-card" data-reveal>
-            <h3>Bachelor of Technology in Information Technology</h3>
-            <p class="edu-institution">Jaypee Institute of Information Technology, Noida, India</p>
-            <p class="edu-meta">August 2018 to June 2022 &middot; GPA 3.8</p>
-            <p class="edu-note">
-              Selected coursework: Software Development, Data Structures and Algorithms, DBMS, Cloud-Based Enterprise
-              Systems, Operating Systems.
-            </p>
-          </article>
-        </div>
-
-        <div class="highlights-grid" data-reveal>
-          <article class="highlight-card">
-            <p class="mini-label">Academic</p>
-            <h3>3.93 Graduate GPA</h3>
-            <p>Maintained across the M.S. in Computer Software Engineering at Arizona State University.</p>
-          </article>
-
-          <article class="highlight-card">
-            <p class="mini-label">Competition</p>
-            <h3>2nd Place, ASU SoDA Spring 2026 Code Challenge XII</h3>
-            <p>Placed second in a timed competitive-programming challenge focused on fast problem-solving and execution.</p>
-          </article>
-
-          <article class="highlight-card">
-            <p class="mini-label">Hackathon</p>
-            <h3>3rd Place, IISE Optimization Hackathon 2025</h3>
-            <p>Built ELEKTRAZ, combining public data, ML demand prediction, and facility-location optimization.</p>
-          </article>
-
-          <article class="highlight-card">
-            <p class="mini-label">Experience</p>
-            <h3>2+ Years in Production Engineering</h3>
-            <p>Customer-facing features and backend automation owned from requirements through deployment at DADO Luxury Ventures and Deloitte.</p>
-          </article>
-
-          <article class="highlight-card">
-            <p class="mini-label">Certifications</p>
-            <h3>Microsoft Azure AZ-900 &middot; CrowdStrike CCFR</h3>
-            <p>Foundational cloud and cybersecurity certifications supporting a backend and systems background.</p>
-          </article>
-        </div>
-
-        <div class="resume-card" data-reveal>
+      <div class="bg-grid">
+        <div class="bg-intro">
           <p>
-            The PDF is kept in the repository so this portfolio stays fast and easy to maintain. Download the latest
-            version below.
+            I'm a software engineer with 2+ years building production software. At Deloitte I built backend
+            automation and detection engineering for enterprise clients. After an M.S. in Computer Software
+            Engineering at Arizona State University, I moved into backend and AI engineering at DADO Luxury
+            Ventures, where I own a customer-facing feature end to end and keep production healthy.
           </p>
-          <div class="resume-actions">
-            <a class="button button-primary" href="assets/Sahil-Rastogi-Resume.pdf" download>Download Resume PDF</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="moments" class="section moments-section">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Hackathon Moments</p>
-          <h2 class="moments-title">Teams and demos behind the projects.</h2>
+          <dl class="facts">
+            <div><dt>Currently</dt><dd>Backend AI Engineering Intern, DADO Luxury Ventures, Inc.</dd></div>
+            <div><dt>Focus</dt><dd>Backend systems, event-driven services, cloud infrastructure, AI-enabled apps</dd></div>
+            <div><dt>Education</dt><dd>M.S. Computer Software Engineering, Arizona State University</dd></div>
+          </dl>
         </div>
 
-        <div class="moments-grid">
-          <article class="moment-card" data-reveal>
-            <div class="moment-media">
-              <img src="assets/hackathon-moneyvest.jpeg" alt="Team photo from the MoneyNest hackathon" loading="lazy">
+        <ol class="timeline">
+          <li>
+            <div class="tl-top">
+              <h3>Backend AI Engineering Intern</h3>
+              <span class="tl-date">Jul 2026 &rarr; Now</span>
             </div>
-            <div class="moment-overlay">
-              <p class="mini-label">Hackathon Build</p>
-              <h3>MoneyNest</h3>
-              <p>Built the MoneyNest financial wellness product in a fast-moving hackathon setting.</p>
-            </div>
-          </article>
-
-          <article class="moment-card" data-reveal>
-            <div class="moment-media">
-              <img src="assets/hackathon-iise.jpeg" alt="Award photo from the IISE at ASU optimization hackathon" loading="lazy">
-            </div>
-            <div class="moment-overlay">
-              <p class="mini-label">3rd Place</p>
-              <h3>IISE at ASU</h3>
-              <p>Placed third with ELEKTRAZ, our optimization-driven EV charging station planning platform.</p>
-            </div>
-          </article>
-
-          <article class="moment-card" data-reveal>
-            <div class="moment-media">
-              <img src="assets/hackathon-codathon-grad.jpeg" alt="Team photo from the codathon grad track event" loading="lazy">
-            </div>
-            <div class="moment-overlay">
-              <p class="mini-label">2nd Place Grad Track</p>
-              <h3>Codathon</h3>
-              <p>Secured second place in the grad track during a code challenge built around speed, demos, and execution.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section">
-        <div class="contact-shell">
-          <div class="contact-intro" data-reveal>
-            <p class="eyebrow">Contact</p>
-            <h2>
-              Let's build something
-              <span>useful.</span>
-            </h2>
-            <p class="contact-copy">
-              I'm a software engineer with production experience across backend systems, cloud infrastructure, and
-              AI-enabled applications. I'm open to opportunities and collaboration where ownership, execution, and
-              system thinking matter.
-            </p>
-
-            <ul class="contact-list" aria-label="Primary contact details">
-              <li><a href="mailto:sahilrastogi106@gmail.com">sahilrastogi106@gmail.com</a></li>
-              <li><a href="https://github.com/Srasto12" target="_blank" rel="noreferrer">github.com/Srasto12</a></li>
-              <li><a href="https://www.linkedin.com/in/sahil-rastogi/" target="_blank" rel="noreferrer">linkedin.com/in/sahil-rastogi</a></li>
-              <li><a href="tel:+16026147803">+1 (602) 614-7803</a></li>
+            <p class="tl-org">DADO Luxury Ventures, Inc.</p>
+            <ul class="tl-points">
+              <li>Own end-to-end delivery of a new customer-facing feature across React, TypeScript, PostgreSQL, Supabase, and AWS (EC2, S3, IAM), refactoring backend services behind an event-driven notification system.</li>
+              <li>Standardized Git flow, repository structure, and code review practices across the team.</li>
+              <li>Identified and remediated backend security vulnerabilities ahead of launch, hardening authentication, authorization, and two-factor authentication flows.</li>
+              <li>Established end-to-end coverage with Playwright and integrated Sentry for exception tracking, performance monitoring, and release diagnostics.</li>
             </ul>
-          </div>
+            <p class="tl-tech">React &middot; TypeScript &middot; PostgreSQL &middot; Supabase &middot; AWS &middot; Playwright &middot; Sentry</p>
+          </li>
+          <li>
+            <div class="tl-top">
+              <h3>Solution Delivery Analyst</h3>
+              <span class="tl-date">Jun 2022 &rarr; Jul 2024</span>
+            </div>
+            <p class="tl-org">Deloitte</p>
+            <ul class="tl-points">
+              <li>Delivered backend automation and workflows in Python, Bash, and Linux for enterprise clients inside agile delivery teams, cutting manual effort by 25%+ and improving system reliability.</li>
+              <li>Partnered directly with SOC and client engineering stakeholders to gather requirements, translate them into working solutions, and own production issues through resolution.</li>
+              <li>Engineered and tuned 20+ Google Chronicle detection rules from telemetry and log data, improving alert quality and accuracy by 30%.</li>
+              <li>Built reusable Python, SQL, and Bash tooling plus operational playbooks so teams could run and extend workflows independently.</li>
+            </ul>
+            <p class="tl-tech">Python &middot; Bash &middot; Linux &middot; SQL &middot; Google Chronicle &middot; Detection Engineering</p>
+          </li>
+          <li>
+            <div class="tl-top">
+              <h3>Technology Intern</h3>
+              <span class="tl-date">Feb 2022 &rarr; May 2022</span>
+            </div>
+            <p class="tl-org">Deloitte</p>
+            <ul class="tl-points">
+              <li>Shipped Python and Bash automation for security operations with Git-based versioning and clear handoff documentation.</li>
+              <li>Built XSOAR automation workflows for incident triage, applying AWS and Azure fundamentals across team deliverables.</li>
+            </ul>
+            <p class="tl-tech">Python &middot; Bash &middot; XSOAR &middot; AWS &middot; Azure</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-          <div class="contact-card contact-form-card" data-reveal>
-            <h3>Send me a message</h3>
-            <form id="contact-form" class="contact-form">
-              <div class="form-row">
-                <div class="field">
-                  <label for="contact-name">Your Name</label>
-                  <input id="contact-name" name="name" type="text" placeholder="Your name" required>
-                </div>
-                <div class="field">
-                  <label for="contact-email">Your Email</label>
-                  <input id="contact-email" name="email" type="email" placeholder="your.email@company.com" required>
-                </div>
-              </div>
+    <section id="work" class="section" data-reveal>
+      <div class="section-head">
+        <p class="sec-index">Selected Work</p>
+        <h2>Three projects, from API design to grounded AI workflows.</h2>
+      </div>
 
-              <div class="field">
-                <label for="contact-subject">Subject</label>
-                <input id="contact-subject" name="subject" type="text" placeholder="Role, recruiter outreach, or collaboration" required>
-              </div>
+      <div class="work">
+        <ol class="work-list" role="tablist" aria-label="Projects">
+          <li>
+            <button class="work-item is-active" data-target="w1" role="tab" aria-selected="true" aria-controls="w1">
+              <span class="wi-num">01</span>
+              <span class="wi-name">Aligned Rewards</span>
+              <span class="wi-tag">OKR workflow platform</span>
+            </button>
+          </li>
+          <li>
+            <button class="work-item" data-target="w2" role="tab" aria-selected="false" aria-controls="w2">
+              <span class="wi-num">02</span>
+              <span class="wi-name">AI Powered Job Application Platform</span>
+              <span class="wi-tag">RAG + approval-gated AI</span>
+            </button>
+          </li>
+          <li>
+            <button class="work-item" data-target="w3" role="tab" aria-selected="false" aria-controls="w3">
+              <span class="wi-num">03</span>
+              <span class="wi-name">CareCaller</span>
+              <span class="wi-tag">Voice + AI patient monitoring</span>
+            </button>
+          </li>
+        </ol>
 
-              <div class="field">
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="message" rows="6" placeholder="Hi Sahil, I came across your portfolio and would love to connect..." required></textarea>
-              </div>
+        <div class="work-panels">
+          <article class="work-panel is-active" id="w1" role="tabpanel">
+            <h3>Aligned Rewards: OKR Workflow Management Platform</h3>
+            <p class="wp-row"><b>Problem</b> OKR creation spanned drafting, editing, and publishing with fragile state and a real risk of duplicate or unauthorized changes.</p>
+            <p class="wp-row"><b>Built</b> REST APIs in NestJS and TypeScript for draft autosave, key result updates, AI suggestions, and publishing workflows.</p>
+            <p class="wp-row"><b>Engineering</b> Modeled MongoDB entities and workflow state for draft management, autosave recovery, and publish transitions; built end-to-end Cypress tests covering core flows, permissions, and publish integrity.</p>
+            <p class="wp-tech">NestJS &middot; TypeScript &middot; MongoDB &middot; Cypress &middot; Postman</p>
+          </article>
 
-              <div class="contact-form-footer">
-                <button class="button button-primary" type="submit">Send Message</button>
-                <p id="contact-form-note" class="form-note">This opens your email client with a prefilled draft to Sahil.</p>
-              </div>
-            </form>
-          </div>
+          <article class="work-panel" id="w2" role="tabpanel">
+            <h3>AI Powered Job Application Platform</h3>
+            <p class="wp-row"><b>Problem</b> A job search scatters application state, recruiter context, and follow-ups across disconnected tools.</p>
+            <p class="wp-row"><b>Built</b> A Next.js and TypeScript app with an approval-gated AI workflow that uses RAG over saved job links, notes, and recruiter context to generate grounded follow-up content and application Q&amp;A, supporting both OpenAI and local Ollama models.</p>
+            <p class="wp-row"><b>Engineering</b> Responsive React interfaces and Next.js API routes for CRUD across applications, reminders, recruiter details, and job-linked records backed by Prisma; calendar reminders, daily notes, search and filtering, stats views, and CSV export.</p>
+            <p class="wp-tech">Next.js &middot; TypeScript &middot; Prisma &middot; SQLite &middot; RAG &middot; OpenAI / Ollama</p>
+            <a class="btn btn-line btn-sm" href="https://github.com/SahilRastogi10/jobTracker" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
+
+          <article class="work-panel" id="w3" role="tabpanel">
+            <h3>CareCaller: Patient Monitoring Workflow Platform</h3>
+            <p class="wp-row"><b>Problem</b> Patient monitoring needs reliable follow-up calls with safe escalation and an accurate record that survives corrections.</p>
+            <p class="wp-row"><b>Built</b> Designed and trained an AI model for a voice pipeline with safety escalation, cached memory, structured extraction, and LLM fallback, plus a multilingual patient-facing interface across the full stack.</p>
+            <p class="wp-row"><b>Engineering</b> Timeline, appointment, and medication workflows that update logs, memory, and automation jobs on every correction; integrated Supabase, Vapi, ElevenLabs, and Groq.</p>
+            <p class="wp-tech">Next.js &middot; TypeScript &middot; Supabase &middot; Vapi &middot; ElevenLabs &middot; Groq</p>
+            <a class="btn btn-line btn-sm" href="https://github.com/ak-asu/carecallerai" target="_blank" rel="noreferrer">GitHub</a>
+          </article>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer class="site-footer">
-      <p>&copy; <span id="current-year"></span> Sahil Rastogi. Designed and built from scratch as a fast, static site.</p>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </footer>
-  </div>
+      <div class="other-head"><span>Other work</span></div>
+      <div class="other-grid">
+        <article class="other-card">
+          <p class="oc-meta">3rd &middot; IISE Optimization Hackathon 2025</p>
+          <h4>ELEKTRAZ</h4>
+          <p>Placing solar-powered EV charging stations across Arizona using public datasets, demand prediction, photovoltaic sizing, and facility-location optimization.</p>
+          <p class="oc-tech">Python &middot; Streamlit &middot; Pyomo &middot; XGBoost</p>
+          <a href="https://github.com/ak-asu/elektraz" target="_blank" rel="noreferrer">GitHub &rarr;</a>
+        </article>
+        <article class="other-card">
+          <p class="oc-meta">Fintech Hackathon</p>
+          <h4>MoneyNest</h4>
+          <p>Financial wellness app with onboarding, budgeting, AI coaching, document analysis, saved plans, and mini-games.</p>
+          <p class="oc-tech">Next.js &middot; React &middot; Supabase &middot; Plaid</p>
+          <a href="https://github.com/ak-asu/ihack" target="_blank" rel="noreferrer">GitHub &rarr;</a>
+        </article>
+        <article class="other-card">
+          <p class="oc-meta">Civic Tech Hackathon</p>
+          <h4>CommonGround Cards</h4>
+          <p>Civic discussion app that generates structured issue cards, persists history, and gives AI-powered group insights to surface shared values.</p>
+          <p class="oc-tech">Next.js &middot; Prisma &middot; SQLite &middot; React</p>
+          <a href="https://github.com/srasto12/Governance_and_collaboration_app_Claude_Hackathon_2026" target="_blank" rel="noreferrer">GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section" data-reveal>
+      <div class="section-head">
+        <p class="sec-index">Skills</p>
+        <h2>The tools and systems I work in.</h2>
+      </div>
+
+      <div class="cap-grid">
+        <div class="cap">
+          <h3>Languages</h3>
+          <ul><li>Java</li><li>Python</li><li>SQL</li><li>TypeScript</li><li>JavaScript</li><li>Bash</li><li>C++</li></ul>
+        </div>
+        <div class="cap">
+          <h3>Web &amp; Frameworks</h3>
+          <ul><li>React</li><li>Next.js</li><li>NestJS</li><li>Spring Boot</li><li>FastAPI</li><li>REST APIs</li><li>Prisma</li></ul>
+        </div>
+        <div class="cap">
+          <h3>Backend &amp; Systems</h3>
+          <ul><li>Microservices</li><li>Distributed Systems</li><li>System Design</li><li>Event-Driven Services</li><li>API Gateway</li><li>RBAC / JWT / OAuth</li><li>Concurrency</li></ul>
+        </div>
+        <div class="cap">
+          <h3>Databases</h3>
+          <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>DynamoDB</li><li>Vector Databases</li><li>Schema Design</li></ul>
+        </div>
+        <div class="cap">
+          <h3>Cloud &amp; DevOps</h3>
+          <ul><li>AWS EC2 / S3 / RDS</li><li>IAM / Lambda / CloudWatch</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li><li>Linux / Unix</li><li>Infra Automation</li></ul>
+        </div>
+        <div class="cap">
+          <h3>Testing &amp; Tools</h3>
+          <ul><li>Playwright</li><li>Cypress</li><li>Postman</li><li>Git</li><li>Unit Testing</li><li>Integration Testing</li></ul>
+        </div>
+        <div class="cap cap-wide">
+          <h3>AI &amp; Data Integration</h3>
+          <ul><li>RAG</li><li>LLM APIs</li><li>Vector Search</li><li>Embeddings</li><li>Llama</li><li>AWS Bedrock</li><li>LangGraph</li><li>API Integrations</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section" data-reveal>
+      <div class="section-head">
+        <p class="sec-index">Education &amp; Achievements</p>
+        <h2>Graduate and undergraduate foundations, plus recent results.</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-col">
+          <article class="edu">
+            <h3>M.S. Computer Software Engineering</h3>
+            <p class="edu-org">Arizona State University</p>
+            <p class="edu-meta">Aug 2024 &rarr; May 2026 &nbsp;/&nbsp; GPA 3.93</p>
+          </article>
+          <article class="edu">
+            <h3>B.Tech Information Technology</h3>
+            <p class="edu-org">Jaypee Institute of Information Technology, Noida, India</p>
+            <p class="edu-meta">Aug 2018 &rarr; Jun 2022 &nbsp;/&nbsp; GPA 3.8</p>
+            <p class="edu-note">Coursework: Software Development, Data Structures &amp; Algorithms, DBMS, Cloud-Based Enterprise Systems, Operating Systems.</p>
+          </article>
+        </div>
+
+        <ul class="ach">
+          <li><span class="ach-k">3.93</span><span class="ach-v">Graduate GPA, M.S. CSE at Arizona State University</span></li>
+          <li><span class="ach-k">2nd</span><span class="ach-v">ASU SoDA Spring 2026 Code Challenge XII</span></li>
+          <li><span class="ach-k">3rd</span><span class="ach-v">IISE Optimization Hackathon 2025 (ELEKTRAZ)</span></li>
+          <li><span class="ach-k">2+ yrs</span><span class="ach-v">Production engineering at DADO Luxury Ventures and Deloitte</span></li>
+          <li><span class="ach-k">Certs</span><span class="ach-v">Microsoft Azure AZ-900 &middot; CrowdStrike CCFR</span></li>
+        </ul>
+      </div>
+
+      <div class="moments">
+        <figure><img src="assets/hackathon-codathon-grad.jpeg" alt="Team at the SoDA code challenge" loading="lazy"><figcaption>2nd place, SoDA Code Challenge XII</figcaption></figure>
+        <figure><img src="assets/hackathon-iise.jpeg" alt="Award photo at the IISE optimization hackathon" loading="lazy"><figcaption>3rd place, IISE Optimization Hackathon</figcaption></figure>
+        <figure><img src="assets/hackathon-moneyvest.jpeg" alt="Team building MoneyNest at a hackathon" loading="lazy"><figcaption>Building MoneyNest</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section" data-reveal>
+      <div class="section-head">
+        <p class="sec-index">Contact</p>
+        <h2>Let&rsquo;s talk.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <p>
+            I'm a software engineer with production experience across backend systems, cloud infrastructure, and
+            AI-enabled applications. Open to opportunities and collaboration where ownership, execution, and system
+            thinking matter.
+          </p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:sahilrastogi106@gmail.com">sahilrastogi106@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/Srasto12" target="_blank" rel="noreferrer">github.com/Srasto12</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/sahil-rastogi/" target="_blank" rel="noreferrer">linkedin.com/in/sahil-rastogi</a></li>
+            <li><span>Phone</span><a href="tel:+16026147803">+1 (602) 614-7803</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" type="text" placeholder="Role, recruiter outreach, or collaboration" required>
+          </div>
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Hi Sahil, I came across your portfolio..." required></textarea>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note">Opens your email client with a prefilled draft.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Sahil Rastogi</p>
+    <p>Designed and built from scratch. No framework.</p>
+    <nav aria-label="Footer">
+      <a href="#background">Background</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
 
   <script src="script.js"></script>
 </body>
